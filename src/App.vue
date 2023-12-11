@@ -1,12 +1,15 @@
 <script>
-import AppComponent from "./components/AppComponent.vue"
-
-import axios from 'axios'; //importo Axios
+import AppMain from "./components/AppMain.vue";
+import AppHeader from "./components/AppHeader.vue"
+import AppConsultant from "./components/AppConsultant.vue";
 import { store } from "./store.js" //state management
 
 export default {
 	components: {
-		AppComponent
+
+		AppHeader,
+		AppConsultant,
+		AppMain
 	},
 	data() {
 		return {
@@ -31,8 +34,29 @@ export default {
 </script>
 
 <template>
+	<header>
+		<AppHeader />
+		<img src="public/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="">
+		<div class="jumbo-container">
+			<div class="flexed-head">
+				<div class="square"></div>
+				<h3>ALWAYS THE BEST WAY YOU NEED IT</h3>
+			</div>
+			<h1>THE BEST BUSINESS CONSULTING</h1>
+			<div class="flexed">
+				<button>READ MORE</button>
+				<div class="play">
+					<i class="fa-sharp fa-solid fa-play"></i>
+				</div>
+			</div>
+
+
+
+		</div>
+	</header>
 	<main>
-		<AppComponent />
+		<AppConsultant />
+		<AppMain />
 	</main>
 </template>
 
@@ -46,7 +70,74 @@ export default {
 // @use './styles/partials/variables' as *;
 
 // ...qui eventuale SCSS di App.vue
-main {
-	padding: 1rem;
+body {
+	position: relative;
+}
+
+header {
+	width: 100%;
+	color: white;
+
+	img {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -2;
+		width: 1070px;
+	}
+}
+
+.jumbo-container {
+	margin: 270px 0 0 2.5rem;
+	width: 600px;
+
+	h3 {
+		font-size: 20px;
+		font-weight: 50;
+	}
+
+	h1 {
+		font-size: 100px;
+		line-height: 90px;
+	}
+
+	button {
+		padding: 1.5rem 3rem;
+		background-color: greenyellow;
+		border: none;
+		font-size: 25px;
+	}
+}
+
+.flexed-head {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.flexed {
+	margin-top: 3rem;
+	display: flex;
+	align-items: flex-end;
+}
+
+.square {
+	width: 50px;
+	height: 3px;
+	background-color: chartreuse;
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.play {
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: 0 2rem;
 }
 </style>
