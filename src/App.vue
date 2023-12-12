@@ -121,6 +121,11 @@ header {
 		border: none;
 		font-size: 16px;
 	}
+
+	button:hover {
+		background-color: #F81D39;
+		color: white;
+	}
 }
 
 .flexed-head {

@@ -58,8 +58,18 @@ export default {
         color: grey;
     }
 
+    li:hover {
+        color: #F81D39;
+        cursor: pointer;
+    }
+
     i {
         margin: 0 0.8rem;
+    }
+
+    i:hover {
+        color: #F81D39;
+        cursor: pointer;
     }
 }
 

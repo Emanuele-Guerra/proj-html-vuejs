@@ -60,7 +60,7 @@ export default {
         </div>
     </section>
     <div class="underwrapper">
-        <div>
+        <div class="img-wrapper">
             <img src="public/business-people-working-together-on-project-and-5FHSKBL.jpg" alt="">
         </div>
         <div class="text-cont">
@@ -169,6 +169,10 @@ section {
     margin-right: 3rem;
 }
 
+.img-wrapper img {
+    width: 100%;
+}
+
 
 
 .flex-cards {
@@ -186,7 +190,7 @@ section {
 
     img {
         width: 900px;
-        height: 610px;
+        height: 550px;
         object-fit: cover;
     }
 }
@@ -201,7 +205,7 @@ section {
 .Asquare {
     width: 45px;
     height: 3px;
-    background-color: aqua;
+    background-color: #39FFBF;
     margin-right: 1rem;
 }
 
@@ -213,7 +217,7 @@ section {
 .end-wrapper {
     position: relative;
     width: 98.5%;
-    background-color: aquamarine;
+    background-color: #39FFBF;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;

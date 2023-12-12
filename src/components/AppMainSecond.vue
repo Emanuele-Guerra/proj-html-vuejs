@@ -118,7 +118,6 @@ h2 {
 }
 
 img:hover {
-
     transition: all 0.3s linear;
     transform: scale(1.05)
 }
@@ -166,7 +165,6 @@ img:hover {
 
 .positioner {
     position: relative;
-    overflow: hidden;
 
 }
 </style>
