@@ -8,13 +8,13 @@ export default {
             store,
             carousel: [
                 {
-                    path: ''
+                    path: 'public/DRY-1-790x592.jpg'
                 },
                 {
-                    path: ''
+                    path: 'public/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg'
                 },
                 {
-                    path: ''
+                    path: 'public/z1el4c4p-790x592.jpg'
                 },
             ],
             veraCard: [
@@ -60,9 +60,9 @@ export default {
             </div>
         </div>
         <div class="carousel-wrapper">
-            <img src="public/DRY-1-790x592.jpg" alt="">
-            <img src="public/DRY-1-790x592.jpg" alt="">
-            <img src="public/DRY-1-790x592.jpg" alt="">
+            <div class="box" v-for="img in carousel">
+                <img :src="img.path" alt="">
+            </div>
         </div>
         <div class="flex-project">
             <div class="under-carousel-wrapper">
@@ -116,7 +116,7 @@ section {
 .square {
     width: 50px;
     height: 3px;
-    background-color: aquamarine;
+    background-color: #39FFBF;
     margin-right: 1rem;
 }
 
@@ -131,22 +131,48 @@ section {
     padding: 1rem;
     color: white;
     letter-spacing: 2.8px;
+    font-weight: 50;
 }
 
 .arrow-box {
     padding: 1rem 1.2rem;
-    background-color: rgb(68, 68, 68);
+    background-color: #36354C;
     margin: 0.2rem;
+
+
+}
+
+.arrow-box:hover {
+    background-color: #39FFBF;
+    transition: all 0.3s linear;
 }
 
 .carousel-wrapper {
+    width: 100%;
     margin-top: 3rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
+
+    overflow: hidden;
+
+
     img {
-        width: calc(96% / 3);
+        width: 100%;
+        transition: transform .4s;
+        display: block;
     }
+}
+
+.box {
+    width: calc(96% / 3);
+}
+
+.carousel-wrapper img:hover {
+    transition: all 0.3s linear;
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
 }
 
 .under-carousel-wrapper {

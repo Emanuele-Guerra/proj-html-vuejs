@@ -65,9 +65,14 @@ section {
 
     button {
         padding: 1rem 3rem;
-        background-color: greenyellow;
+        background-color: #39FFBF;
         border: none;
-        font-size: 20px;
+
+    }
+
+    button:hover {
+        background-color: crimson;
+        color: white;
     }
 }
 
@@ -79,7 +84,7 @@ h2 {
 .square {
     width: 50px;
     height: 3px;
-    background-color: aquamarine;
+    background-color: #39FFBF;
     margin-right: 1rem;
 }
 
@@ -91,7 +96,7 @@ h2 {
     h3 {
         letter-spacing: 2.8px;
         color: white;
-        font-weight: lighter;
+        font-weight: 50;
     }
 }
 
@@ -102,15 +107,18 @@ h2 {
 
 .img-wrapper {
     perspective: 1000px;
-    width: 49%
+    width: 49%;
+
 }
 
 .img-wrapper img {
     width: 100%;
     transform: scale(1);
+
 }
 
 img:hover {
+
     transition: all 0.3s linear;
     transform: scale(1.05)
 }
@@ -159,5 +167,6 @@ img:hover {
 .positioner {
     position: relative;
     overflow: hidden;
+
 }
 </style>

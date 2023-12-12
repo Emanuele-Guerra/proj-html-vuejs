@@ -165,7 +165,7 @@ section {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background-color: red;
+    background-color: #F81D39;
     margin-right: 3rem;
 }
 
@@ -225,12 +225,18 @@ section {
 
     button {
         padding: 1.5rem 3rem;
-        background-color: greenyellow;
+        color: white;
+        background-color: #1F1E38;
         border: none;
-        font-size: 20px;
+        background-color: #F81D39;
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+
+    button:hover {
+        background-color: #1f1e38;
+
     }
 
     .f-content {

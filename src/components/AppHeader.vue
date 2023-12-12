@@ -37,13 +37,15 @@ li {
     display: inline-block;
     margin: 0 1rem;
     font-weight: lighter;
-    color: white;
+    color: rgb(189, 189, 189);
     padding-top: 26px;
 }
 
 
 li:hover {
     border-top: 5px solid white;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -52,6 +54,7 @@ li:hover {
     padding-top: 26px;
     border-top: 5px solid white;
     transform-origin: 0% 50%;
+    color: white;
 }
 
 li:hover:after {

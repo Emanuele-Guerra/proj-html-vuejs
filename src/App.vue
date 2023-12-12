@@ -65,6 +65,9 @@ export default {
 		<AppMain />
 		<AppMainSecond />
 		<AppPreFooter />
+		<AppFooter />
+
+
 	</main>
 </template>
 
@@ -78,6 +81,7 @@ export default {
 // @use './styles/partials/variables' as *;
 
 // ...qui eventuale SCSS di App.vue
+
 body {
 	position: relative;
 }
@@ -103,6 +107,7 @@ header {
 		font-size: 20px;
 		font-weight: 50;
 		letter-spacing: 2.8px;
+
 	}
 
 	h1 {
@@ -112,9 +117,9 @@ header {
 
 	button {
 		padding: 1.5rem 3rem;
-		background-color: greenyellow;
+		background-color: #39FFBF;
 		border: none;
-		font-size: 25px;
+		font-size: 16px;
 	}
 }
 
@@ -133,7 +138,7 @@ header {
 .square {
 	width: 50px;
 	height: 3px;
-	background-color: chartreuse;
+	background-color: #39FFBF;
 	display: inline-block;
 	margin-right: 1rem;
 }
@@ -143,8 +148,8 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 4rem;
-	width: 4rem;
+	height: 3.3rem;
+	width: 3.3rem;
 	border-radius: 50%;
 	border: 2px solid white;
 	margin: 0 2rem;

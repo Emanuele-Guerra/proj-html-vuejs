@@ -8,11 +8,29 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+
     background-color: $themeColor;
 }
 
 p {
     line-height: 25px;
     font-size: 18px;
+}
+
+button {
+    letter-spacing: 2.8px;
+    font-family: 10px;
+    transition: all 0.3s linear;
+}
+
+h2 {
+    font-family: "Bai Jamjuree"
+}
+
+h3 {
+    font-family: "Bai Jamjuree"
+}
+
+h1 {
+    font-family: "Bai Jamjuree"
 }
