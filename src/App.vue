@@ -1,7 +1,10 @@
 <script>
-import AppMain from "./components/AppMain.vue";
 import AppHeader from "./components/AppHeader.vue"
 import AppConsultant from "./components/AppConsultant.vue";
+import AppMain from "./components/AppMain.vue";
+import AppMainSecond from "./components/AppMainSecond.vue";
+import AppPreFooter from "./components/AppPreFooter.vue";
+import AppFooter from "./components/AppFooter.vue"
 import { store } from "./store.js" //state management
 
 export default {
@@ -9,7 +12,10 @@ export default {
 
 		AppHeader,
 		AppConsultant,
-		AppMain
+		AppMain,
+		AppMainSecond,
+		AppPreFooter,
+		AppFooter
 	},
 	data() {
 		return {
@@ -57,6 +63,8 @@ export default {
 	<main>
 		<AppConsultant />
 		<AppMain />
+		<AppMainSecond />
+		<AppPreFooter />
 	</main>
 </template>
 
@@ -94,6 +102,7 @@ header {
 	h3 {
 		font-size: 20px;
 		font-weight: 50;
+		letter-spacing: 2.8px;
 	}
 
 	h1 {

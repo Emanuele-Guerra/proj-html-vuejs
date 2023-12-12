@@ -9,5 +9,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    background-color: #1f1e38;
+    background-color: $themeColor;
+}
+
+p {
+    line-height: 25px;
+    font-size: 18px;
 }

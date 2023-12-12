@@ -102,8 +102,9 @@ section {
 
 }
 
-h2 {
+.title-wrap h2 {
     font-size: 30px;
+    color: #1f1e38;
 }
 
 .title-wrap {
@@ -134,6 +135,8 @@ h2 {
     padding: 6rem 0 0 10rem;
     width: calc(90% / 2);
 
+
+
     h3 {
         font-size: 25px;
     }
@@ -149,6 +152,7 @@ h2 {
 .title-icon {
     display: flex;
     align-items: flex-start;
+    color: #1f1e38
 }
 
 .icon-wrap {
@@ -190,6 +194,8 @@ h2 {
 .about-us {
     display: flex;
     align-items: center;
+    letter-spacing: 2.8px;
+    font-weight: 50;
 }
 
 .Asquare {
@@ -206,10 +212,10 @@ h2 {
 
 .end-wrapper {
     position: relative;
-    width: 97%;
+    width: 98.5%;
     background-color: aquamarine;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     padding: 7rem 12rem 7rem 8rem;
 
