@@ -14,7 +14,7 @@ export default {
     <section>
         <div class="flex-box">
             <div>
-                <img src="public/logotype-2-150x25.png" alt="">
+                <img src="/logotype-2-150x25.png" alt="">
             </div>
             <div>
                 <ul v-for="link in this.store.headerLinks">
@@ -45,9 +45,10 @@ export default {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 4rem 0;
+    padding: 5rem 0;
     color: white;
     border-bottom: 1px solid gray;
+
 
 
 

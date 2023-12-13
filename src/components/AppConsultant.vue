@@ -61,7 +61,7 @@ export default {
     </section>
     <div class="underwrapper">
         <div class="img-wrapper">
-            <img src="public/business-people-working-together-on-project-and-5FHSKBL.jpg" alt="">
+            <img src="/business-people-working-together-on-project-and-5FHSKBL.jpg" alt="">
         </div>
         <div class="text-cont">
             <div class="about-us">
@@ -171,6 +171,7 @@ section {
 
 .img-wrapper img {
     width: 100%;
+
 }
 
 

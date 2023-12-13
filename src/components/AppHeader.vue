@@ -15,7 +15,7 @@ export default {
 <template>
     <section>
         <div>
-            <img src="/public/logotype.png" alt="">
+            <img src="/logotype.png" alt="">
         </div>
         <div>
             <ul>

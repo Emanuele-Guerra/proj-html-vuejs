@@ -8,13 +8,20 @@ export default {
             store,
             carousel: [
                 {
-                    path: 'public/DRY-1-790x592.jpg'
+                    path: 'public/DRY-1-790x592.jpg',
+                    prod: 'Purinky products',
+                    cat: 'Uncategorized'
+
                 },
                 {
-                    path: 'public/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg'
+                    path: 'public/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg',
+                    prod: 'Purinky products',
+                    cat: 'Uncategorized'
                 },
                 {
-                    path: 'public/z1el4c4p-790x592.jpg'
+                    path: 'public/z1el4c4p-790x592.jpg',
+                    prod: 'Purinky products',
+                    cat: 'Uncategorized'
                 },
             ],
             veraCard: [
@@ -62,8 +69,19 @@ export default {
         <div class="carousel-wrapper">
             <div class="box" v-for="img in carousel">
                 <img :src="img.path" alt="">
+                <div class="ab-desc">
+                    <div>
+                        <h5>{{ img.prod }}</h5>
+                        <p>{{ img.cat }}</p>
+                    </div>
+                    <div>
+                        <div class="add-btn">+</div>
+                    </div>
+                </div>
             </div>
+
         </div>
+
         <div class="flex-project">
             <div class="under-carousel-wrapper">
                 <p>TESTIMONIAL</p>
@@ -153,26 +171,88 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 
 
-    overflow: hidden;
+
 
 
     img {
         width: 100%;
         transition: transform .4s;
         display: block;
+        z-index: -10;
+
+
     }
+
+
 }
 
 .box {
     width: calc(96% / 3);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.box:hover {
+    background-color: rgb(155, 0, 0);
+}
+
+.box:hover .ab-desc {
+    display: inline-flex;
+    transition: all 1s linear;
+
+}
+
+.ab-desc {
+    width: 93%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #ffffff;
+    display: none;
+    bottom: 1rem;
+    left: 1rem;
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        color: rgb(149, 149, 149);
+    }
+}
+
+.add-btn {
+    background-color: grey;
+    color: white;
+    background-color: #36354C;
+    padding: 0.3rem 1.2rem;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.add-btn:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #39FFBF;
+    color: #36354C;
 }
 
 .carousel-wrapper img:hover {
-    transition: all 0.3s linear;
+    transition: all 0.8s ease-in-out;
     transform: scale(1.3);
     transform-origin: 50% 50%;
+    opacity: 0.3;
+
+
+
+
+
+
 }
 
 .under-carousel-wrapper {
@@ -199,7 +279,7 @@ section {
 .square-carousel {
     width: 50px;
     height: 3px;
-    background-color: aquamarine;
+    background-color: #39FFBF;
 
 }
 

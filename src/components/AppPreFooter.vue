@@ -13,7 +13,7 @@ export default {
 
 <template>
     <section>
-        <img src="public/business-people-working-together-on-project-and-B3MZ4TX.jpg" alt="">
+        <img src="/business-people-working-together-on-project-and-B3MZ4TX.jpg" alt="">
         <div class="wrapper">
             <h2>LET'S TALK ABOUT WORK</h2>
             <p>A wonderful serenity has taken possession Far far <br> away, behind the word mountains.</p>
@@ -38,8 +38,9 @@ section {
         margin-top: 10rem;
         z-index: -3;
         width: 100%;
-        transform: scale(1.2);
+        height: 450px;
         overflow: hidden;
+        object-fit: cover;
 
     }
 }
@@ -52,6 +53,7 @@ section {
     transform: translate(-50%, -50%);
 
     h2 {
+        margin-top: 12rem;
         font-size: 45px;
         font-weight: bold;
     }

@@ -11,7 +11,7 @@ export default {
                     author: 'by Paul',
                     title: 'Canadian Consulting Firm acquired by UK Giant',
                     text: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a ...',
-                    img: 'public/startup-business-people-and-strategy-board-PAJ3P9K-1390x1042.jpg',
+                    img: '/startup-business-people-and-strategy-board-PAJ3P9K-1390x1042.jpg',
 
                 },
                 {
@@ -19,7 +19,7 @@ export default {
                     author: 'by Paul',
                     title: 'Canadian Consulting Firm acquired by UK Giant',
                     text: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a ...',
-                    img: 'public/business-people-working-together-on-project-and-5FHSKBL-1390.jpg',
+                    img: '/business-people-working-together-on-project-and-5FHSKBL-1390.jpg',
                 }
             ]
         }
@@ -41,6 +41,7 @@ export default {
             <div class="img-wrapper" v-for="info in cards">
                 <div class="positioner">
                     <img :src="info.img" alt="">
+
 
                 </div>
                 <div class="card">
@@ -106,6 +107,7 @@ h2 {
 }
 
 .img-wrapper {
+
     perspective: 1000px;
     width: 49%;
 
@@ -114,6 +116,7 @@ h2 {
 .img-wrapper img {
     width: 100%;
     transform: scale(1);
+
 
 }
 
@@ -140,11 +143,18 @@ img:hover {
 
     h3 {
         font-size: 25px;
+        margin: 1.5rem 0 2rem 0;
     }
 
     span {
         color: crimson;
         margin-right: 0.25rem;
+
+    }
+
+    p {
+        font-size: 16px;
+        color: rgb(151, 151, 151);
     }
 }
 
@@ -164,7 +174,11 @@ img:hover {
 
 
 .positioner {
-    position: relative;
 
+    overflow: hidden;
+}
+
+.ab-desc {
+    position: absolute;
 }
 </style>

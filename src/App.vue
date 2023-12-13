@@ -42,7 +42,7 @@ export default {
 <template>
 	<header>
 		<AppHeader />
-		<img src="public/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="">
+		<img src="/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="">
 		<div class="jumbo-container">
 			<div class="flexed-head">
 				<div class="square"></div>
