@@ -7,9 +7,15 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+
 
     background-color: $themeColor;
+}
+
+p,
+span,
+li {
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -23,14 +29,11 @@ button {
     transition: all 0.3s linear;
 }
 
-h2 {
-    font-family: "Bai Jamjuree"
-}
-
-h3 {
-    font-family: "Bai Jamjuree"
-}
-
-h1 {
+h2,
+h1,
+h3,
+h5,
+h6,
+h4 {
     font-family: "Bai Jamjuree"
 }

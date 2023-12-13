@@ -37,8 +37,9 @@ li {
     display: inline-block;
     margin: 0 1rem;
     font-weight: lighter;
-    color: rgb(189, 189, 189);
+    color: rgb(220, 220, 220);
     padding-top: 26px;
+    font-size: 15px;
 }
 
 
@@ -55,6 +56,7 @@ li:hover {
     border-top: 5px solid white;
     transform-origin: 0% 50%;
     color: white;
+    font-weight: 700;
 }
 
 li:hover:after {

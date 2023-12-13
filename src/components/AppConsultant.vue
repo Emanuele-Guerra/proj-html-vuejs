@@ -135,7 +135,10 @@ section {
     padding: 6rem 0 0 10rem;
     width: calc(90% / 2);
 
-
+    p {
+        color: rgb(97, 97, 97);
+        font-size: 16px;
+    }
 
     h3 {
         font-size: 25px;
